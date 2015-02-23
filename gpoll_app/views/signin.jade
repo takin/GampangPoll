@@ -1,0 +1,83 @@
+doctype html
+//
+  Author: W3layouts
+  Author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html
+  head
+    title Sign In to GampangPoll
+    link(href='stylesheets/loginstyle.css', rel='stylesheet', type='text/css', media='all')
+    link(href='http://fonts.googleapis.com/css?family=Rokkitt', rel='stylesheet', type='text/css')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+  body
+    .wrap
+      // strat-contact-form
+      .contact-form
+        // start-form
+        form.contact_form(action='#', method='post', name='contact_form')
+          h1 Login Into Your Account
+          | &#x9;    
+          ul
+            li
+              input.textbox1(type='email', name='email', placeholder='info@w3layouts.com', required='')
+              | &#x9;            
+              span.form_hint Enter a valid email
+              | &#x9;             
+              p
+                img(src='images/contact.png', alt='')
+            | &#x9;        
+            li
+              input.textbox2(type='password', name='website', placeholder='password')
+              | &#x9;            
+              p
+                img(src='images/lock.png', alt='')
+          |        &#x9; &#x9;
+          input(type='submit', name='Sign In', value='Sign In')
+          | &#x9;&#x9;&#x9;
+          .clear
+          | &#x9;
+          | &#x9;&#x9;&#x9;
+          label.checkbox
+            input(type='checkbox', name='checkbox', checked='')
+            i
+            | Remember me
+          | &#x9;&#x9;
+          .forgot
+            a(href='#') forgot password?
+          | &#x9;
+          | &#x9;&#x9;
+          .clear
+        // end-form
+        // start-account
+        .account
+          h2
+            a(href='#') Don&apos; have an account? Sign Up!
+          |     
+          .span
+            a(href='#')
+              img(src='images/facebook.png', alt='')
+              i Sign In with Facebook
+              .clear
+          | &#x9;
+          |     
+          .span1
+            a(href='#')
+              img(src='images/twitter.png', alt='')
+              i Sign In with Twitter
+              .clear
+          |     
+          .span2
+            a(href='#')
+              img(src='images/gplus.png', alt='')
+              i Sign In with Google+
+              .clear
+        // end-account
+        .clear
+      // end-contact-form
+      .footer
+        p
+          | Template by 
+          a(href='http://w3layouts.com') w3layouts

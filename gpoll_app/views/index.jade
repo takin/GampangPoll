@@ -1,0 +1,128 @@
+doctype html(lang='en')
+head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='A layout example that shows off a responsive product landing page.')
+    |     
+    title GampangPoll : Audience Response System Powered By Node.js & Android
+    |     
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0/pure-min.css')
+    //if lte IE 8
+      link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css')
+    // [if gt IE 8] <!
+    |   
+    |     
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css')
+    // <![endif]
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+    //if lte IE 8
+      link(rel='stylesheet', href='/stylesheets/marketing-old-ie.css')
+    // [if gt IE 8] <!
+    |         
+    link(rel='stylesheet', href='/stylesheets/marketing.css')
+    // <![endif]
+  body
+    .header
+      .home-menu.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-fixed
+        a.pure-menu-heading(href='') GampangPoll
+        |         
+        ul
+          li.pure-menu-selected
+            a(href='index.jade') Home
+          |            
+          li
+            a(href='signin.jade') Sign In
+    .splash-container
+      .splash
+        h1.splash-head Welcome !
+        |         
+        p.splash-subhead
+          | Poll has never been this easy
+        |         
+        p
+          a.pure-button.pure-button-primary(href='http://purecss.io') Get Started
+    .content-wrapper
+      .content
+        h2.content-head.is-center Our Feature
+        |         
+        .pure-g
+          .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+            h3.content-subhead
+              i.fa.fa-rocket
+              |                     Get Started Quickly
+            |                 
+            p
+              | Create your Polling Questions in minutes. It's simple, and easy to use.
+          |             
+          .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+            h3.content-subhead
+              i.fa.fa-mobile
+              |                     Responsive Layouts
+            |                 
+            p
+              | Support Multi layout and device 
+          |             
+          .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+            h3.content-subhead
+              i.fa.fa-th-large
+              |                     Android Friendly
+            |                 
+            p
+              | Use our android smartphone as a clicker, to gather the answers you need.
+          |             
+          .l-box.pure-u-1.pure-u-md-1-2.pure-u-lg-1-4
+            h3.content-subhead
+              i.fa.fa-check-square-o
+              |                     Real-Time
+            |                 
+            p
+              | Get the Answers Real-Time from the respondent.
+      |     
+      .ribbon.l-box-lrg.pure-g
+        .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
+          img.pure-img-responsive(alt='File Icons', width='300', src='images/GooglePlay.png')
+        |         
+        .pure-u-1.pure-u-md-1-2.pure-u-lg-3-5
+          h2.content-head.content-head-ribbon Download our apps on Google Play Store
+          |             
+          p
+            | the android apps takes the clicker role, and let your respondent answer the polling from it.
+      |     
+      .content
+        h2.content-head.is-center New to GampangPoll? Sign Up Now, it's free.
+        |         
+        .pure-g
+          .l-box-lrg.pure-u-1.pure-u-md-2-5
+            form.pure-form.pure-form-stacked
+              fieldset
+                label(for='name') Your Name
+                |                         
+                input#name(type='text', placeholder='Your Name')
+                |                         
+                label(for='email') Your Email
+                |                         
+                input#email(type='email', placeholder='Your Email')
+                |                         
+                label(for='password') Your Password
+                |                         
+                input#password(type='password', placeholder='Your Password')
+                |                         
+                button.pure-button(type='submit') Sign Up
+          |             
+          .l-box-lrg.pure-u-1.pure-u-md-3-5
+            h4 Contact Us
+            |                 
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat.
+            |                 
+            h4 More Information
+            |                 
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua.
+      |     
+      .footer.l-box.is-center
+        | Copyright GampangPoll 2015. All rights reserved.
